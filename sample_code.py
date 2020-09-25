@@ -236,7 +236,7 @@ game.solve(), game.eigs()
 game.solutions
 
 # Solving eigenvalue number 6 for n when theta = 1.5
-inequality = list(game.eigenvals[6].items())[1][0].subs([(game.theta, 1)])
+inequality = list(game.eigenvals[6].items())[1][0].subs([(game.theta, 1.5)])
 solve_poly_inequality(Poly(inequality, game.variables[1], domain='R'), '<')
 
 # Phase space and time series
